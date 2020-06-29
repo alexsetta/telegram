@@ -1,5 +1,5 @@
-# sendMsgTg
+# Telegram
 
-Envia uma mensagem para um bot do Telegram.
+SendMessage: Envia uma mensagem para um bot do Telegram.
 
 São necessários o id do usuário e o token do bot.
