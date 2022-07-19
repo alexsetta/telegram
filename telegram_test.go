@@ -5,7 +5,7 @@ import (
 )
 
 func TestSendMessage(t *testing.T) {
-	config, err := readConfig("telegram.cfg")
+	config, err := readConfig("telegram.json")
 	if err != nil {
 		t.Errorf("SendMessage():readConfig() error = %v", err)
 		return
