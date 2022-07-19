@@ -22,7 +22,7 @@ type Config struct {
 	Token string `json:"Token"`
 }
 
-func readConfig(fileName string) (Config, error) {
+func ReadConfig(fileName string) (Config, error) {
 	cfg := Config{}
 	b, err := ioutil.ReadFile(fileName)
 	if err != nil {
@@ -35,7 +35,6 @@ func readConfig(fileName string) (Config, error) {
 	}
 	return cfg, nil
 }
-
 
 func SendMessage(chatID int64, token, message string) error {
 	// Create the request body struct
