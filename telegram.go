@@ -36,6 +36,7 @@ func readConfig(fileName string) (Config, error) {
 	return cfg, nil
 }
 
+
 func SendMessage(chatID int64, token, message string) error {
 	// Create the request body struct
 	reqBody := &SendMessageReqBody{
